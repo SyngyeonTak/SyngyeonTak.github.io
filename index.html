@@ -1,21 +1,132 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <title>승연 탁 | Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #2c3e50;
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.1rem;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    h2 {
+      border-bottom: 2px solid #2c3e50;
+      padding-bottom: 0.5rem;
+      margin-top: 2rem;
+      color: #2c3e50;
+    }
+    .project {
+      margin-bottom: 1.5rem;
+    }
+    .project a {
+      font-weight: bold;
+      text-decoration: none;
+      color: #2980b9;
+    }
+    .project a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      background: #2c3e50;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
 </head>
 <body>
-  <h1>안녕하세요 👋</h1>
-  <p>데이터 사이언스 · 추천시스템 연구/개발자 포트폴리오 페이지입니다.</p>
+  <header>
+    <h1>승연 탁</h1>
+    <p>데이터 사이언스 · 추천시스템 연구/개발자</p>
+  </header>
 
-  <h2>Projects</h2>
-  <ul>
-    <li><a href="https://github.com/syngyeontak/project1">Session-Based Recommendation with GNN</a></li>
-    <li><a href="https://github.com/syngyeontak/project2">GraphRAG Movie Chatbot</a></li>
-  </ul>
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <p>
+        GNN(Graph Neural Network) 기반 세션 추천 시스템 연구 경험과, 
+        Graph DB·LLM을 활용한 추천 챗봇 개발 경험을 보유하고 있습니다.  
+        금융 IT 업계에서의 3년간 백엔드 및 데이터 엔지니어링 실무 경험 또한 있습니다.
+      </p>
+    </section>
 
-  <h2>Contact</h2>
-  <p>📧 Email: yourname@email.com</p>
-  <p>🔗 GitHub: <a href="https://github.com/syngyeontak">syngyeontak</a></p>
+    <section>
+      <h2>Projects</h2>
+
+      <div class="project">
+        <a href="https://github.com/SyngyeonTak/GNN-and-GraphRAG-based-Movie-Recommendation-Chatbot" target="_blank">
+          🎬 GraphRAG Movie Chatbot
+        </a>
+        <p>Neo4j + PyTorch Geometric 기반 이종 지식 그래프와 GNN 추천 모델을 결합하여 영화 추천 챗봇 구현.  
+           LLM 기반 질의 라우팅 및 RAG 아키텍처로 사실 기반 + 개인화 추천 지원.</p>
+      </div>
+
+      <div class="project">
+        <a href="https://github.com/seoulAlpha/seoulAlpha" target="_blank">
+          🌏 LLM 기반 여행지 추천 챗봇 ("서울 + Alpha")
+        </a>
+        <p>외국인 관광객 데이터 분석 및 군집화 기반으로 대화형 여행 추천 서비스 개발.  
+           다국어 지원 RAG 구조 설계 및 LLM Agent 구현.</p>
+      </div>
+
+      <div class="project">
+        <a href="https://github.com/DDohyeon2941/sungsoo" target="_blank">
+          🏙️ 성동구 상권 분석 프로젝트
+        </a>
+        <p>성동구 빅데이터 분석·활용 펠로우십 참여.  
+           상권별 매출/유동인구 데이터 분석 및 지속 가능한 상권 정의와 정책 제언.</p>
+      </div>
+
+      <div class="project">
+        <strong>📌 Session-Based Recommendation with GNN</strong>
+        <p>(서울과학기술대학교 석사 연구 / 논문 투고 후 코드 공개 예정)  
+           Homogeneous/Heterogeneous/Hypergraph 기반 세션 추천 연구, 
+           데이터 필터링 및 증강 기법으로 Tail 아이템 성능 개선.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+      <p><strong>SBI Cosmoney</strong> | 연구원 (2021.03 ~ 2024.02)</p>
+      <ul>
+        <li>사내 백오피스 시스템 개발 및 운영 (Spring Boot, REST API)</li>
+        <li>MySQL 기반 데이터 모델링 및 대용량 통계 처리 자동화</li>
+        <li>실시간 송금 시스템 장애 대응 및 기술 커뮤니케이션 주도</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>📧 Email: <a href="mailto:a01055356349@gmail.com">a01055356349@gmail.com</a></p>
+      <p>🔗 GitHub: <a href="https://github.com/syngyeontak" target="_blank">syngyeontak</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 승연 탁 | Portfolio</p>
+  </footer>
 </body>
 </html>
