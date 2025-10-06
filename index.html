@@ -90,101 +90,119 @@
       <h2>Projects</h2>
       <ul style="list-style-type: disc; padding-left: 1.5rem;">
     
-        <!-- Session-based Recommendation -->
-        <li class="project">
-          <!-- [대항목] 프로젝트 이름 -->
-          <strong>Session-Based Recommendation system (SBRs) with GNN</strong>
-          
-          <!-- [중항목] 프로젝트 개요 -->
-          <p style="margin-left:1.2rem; margin-top:6px;">
+        <strong>Session-Based Recommendation system (SBRs) with GNN</strong>
+
+        <!-- [중항목] 프로젝트 개요 -->
+        <ul style="list-style-type: disc; padding-left: 1.5rem; margin-top:6px;">
+          <li>
             (서울과학기술대학교 석사 연구 / 논문 투고 후 코드 공개 예정)<br>
             세션 데이터 내 아이템 간 관계를 그래프로 모델링하고, GNN을 활용하여 추천 정확도와 학습 효율을 개선한 연구.
-          </p>
-
-          <!-- [소항목] 주요 성과 -->
-          <ul style="list-style-type: circle; padding-left: 1.2rem;">
-            <li>세션 내 아이템 간 관계를 그래프로 모델링하여 <strong>GNN 기반 세션 추천 알고리즘 연구</strong></li>
-            <li>데이터 필터링 및 증강 기법을 결합해 <strong>잡음(Noise) 제거 및 희소 세션 데이터 보완</strong></li>
-            <li>Tail 아이템 추천 성능 <strong>최대 10% 향상</strong> 및 학습 효율 <strong>최대 20% 단축</strong> 달성</li>
-          </ul>
-    
-          <!-- [중항목] 기술 스택 -->
-          <p style="margin-left:1.2rem; margin-top:4px;">
+          </li>
+        </ul>
+      
+        <!-- [소항목] 주요 성과 -->
+        <ul style="list-style-type: circle; padding-left: 1.5rem;">
+          <li>세션 내 아이템 간 관계를 그래프로 모델링하여 <strong>GNN 기반 세션 추천 알고리즘 연구</strong></li>
+          <li>데이터 필터링 및 증강 기법을 결합해 <strong>잡음(Noise) 제거 및 희소 세션 데이터 보완</strong></li>
+          <li>Tail 아이템 추천 성능 <strong>최대 10% 향상</strong> 및 학습 효율 <strong>최대 20% 단축</strong> 달성</li>
+        </ul>
+      
+        <!-- [중항목] 기술 스택 -->
+        <ul style="list-style-type: disc; padding-left: 1.5rem; margin-top:4px;">
+          <li>
             <strong>Tech Stack:</strong> Python · PyTorch Geometric · Docker · Linux
-          </p>
-    
-          
-        </li>
+          </li>
+        </ul>
     
         <!-- GraphRAG Movie Chatbot -->
         <li class="project">
           <strong>GraphRAG Movie Chatbot</strong>
           <a href="https://github.com/SyngyeonTak/GNN-and-GraphRAG-based-Movie-Recommendation-Chatbot" target="_blank">[GitHub]</a>
           <a href="#" target="_blank" style="margin-left:8px;">[Demo]</a>
-    
-          <p style="margin-left:1.2rem; margin-top:6px;">
-            Neo4j 기반 지식 그래프와 GNN을 결합해 영화 간 관계를 모델링하고,  
-            LLM을 이용한 질의응답 기반 <strong>대화형 추천 챗봇</strong>을 개발한 프로젝트.
-          </p>
-    
-          <p style="margin-left:1.2rem; margin-top:4px;">
-            <strong>Tech Stack:</strong> Python · PyTorch Geometric · OpenAI · FAISS · LangChain · Neo4j · FastAPI · AWS · ElasticSearch
-          </p>
-    
-          <ul style="list-style-type: circle; padding-left: 1.2rem;">
+        
+          <!-- 프로젝트 개요 -->
+          <ul style="list-style-type: disc; padding-left: 1.5rem; margin-top:6px;">
+            <li>
+              Neo4j 기반 지식 그래프와 GNN을 결합해 영화 간 관계를 모델링하고,  
+              LLM을 이용한 질의응답 기반 <strong>대화형 추천 챗봇</strong>을 개발한 프로젝트.
+            </li>
+          </ul>
+        
+          <!-- 기술 스택 -->
+          <ul style="list-style-type: disc; padding-left: 1.5rem; margin-top:4px;">
+            <li>
+              <strong>Tech Stack:</strong> Python · PyTorch Geometric · OpenAI · FAISS · LangChain · Neo4j · FastAPI · AWS · ElasticSearch
+            </li>
+          </ul>
+        
+          <!-- 주요 성과 -->
+          <ul style="list-style-type: circle; padding-left: 1.5rem;">
             <li>RAG(Retrieval-Augmented Generation) 구조로 <strong>LLM의 환각(Hallucination) 완화</strong></li>
             <li>Neo4j + HGAT 모델을 기반으로 <strong>하이브리드 추천 구조 구현</strong></li>
             <li>AWS 환경에서 FastAPI로 <strong>실시간 추천 서비스 배포 및 운영 환경 구축</strong></li>
             <li>ElasticSearch 기반 검색 최적화로 <strong>응답 시간 약 30% 단축</strong></li>
           </ul>
         </li>
-    
+        
         <!-- 서울 + Alpha -->
         <li class="project">
           <strong>LLM 기반 여행지 추천 챗봇 ("서울 + Alpha")</strong>
           <a href="https://github.com/seoulAlpha/seoulAlpha" target="_blank">[GitHub]</a>
           <a href="#" target="_blank" style="margin-left:8px;">[Demo]</a>
-    
-          <p style="margin-left:1.2rem; margin-top:6px;">
-            외국인 관광객 데이터를 기반으로 군집화된 여행자 유형에 맞춰  
-            개인화된 여행지를 추천하는 <strong>LLM 기반 다국어 대화형 시스템</strong> 개발 프로젝트.
-          </p>
-    
-          <p style="margin-left:1.2rem; margin-top:4px;">
-            <strong>Tech Stack:</strong> Python · OpenAI · LangChain · FAISS · Hugging Face Spaces
-          </p>
-    
-          <ul style="list-style-type: circle; padding-left: 1.2rem;">
+        
+          <!-- 프로젝트 개요 -->
+          <ul style="list-style-type: disc; padding-left: 1.5rem; margin-top:6px;">
+            <li>
+              외국인 관광객 데이터를 기반으로 군집화된 여행자 유형에 맞춰  
+              개인화된 여행지를 추천하는 <strong>LLM 기반 다국어 대화형 시스템</strong> 개발 프로젝트.
+            </li>
+          </ul>
+        
+          <!-- 기술 스택 -->
+          <ul style="list-style-type: disc; padding-left: 1.5rem; margin-top:4px;">
+            <li>
+              <strong>Tech Stack:</strong> Python · OpenAI · LangChain · FAISS · Hugging Face Spaces
+            </li>
+          </ul>
+        
+          <!-- 주요 성과 -->
+          <ul style="list-style-type: circle; padding-left: 1.5rem;">
             <li>관광객 데이터 분석 및 K-Means 군집화를 통한 <strong>여행자 유형(페르소나) 도출</strong></li>
             <li>RAG 아키텍처 설계 및 <strong>LLM Agent 구현</strong>으로 다국어 질의 대응</li>
             <li>FAISS 기반 <strong>의미 검색(semantic search)</strong>으로 문맥 기반 추천 구현</li>
             <li>Hugging Face Spaces를 활용한 <strong>모델 배포 및 운영</strong></li>
           </ul>
         </li>
-    
+        
         <!-- 성동구 상권 분석 -->
         <li class="project">
           <strong>성동구 상권 분석 프로젝트</strong>
           <a href="https://github.com/DDohyeon2941/sungsoo" target="_blank">[GitHub]</a>
-    
-          <p style="margin-left:1.2rem; margin-top:6px;">
-            성동구 빅데이터 분석·활용 펠로우십에 참여하여  
-            상권별 매출 및 유동 인구를 분석하고, 지속 가능한 상권 정의 및 정책을 제안한 프로젝트.
-          </p>
-    
-          <p style="margin-left:1.2rem; margin-top:4px;">
-            <strong>Tech Stack:</strong> Python · QGIS · SHAP · MySQL
-          </p>
-    
-          <ul style="list-style-type: circle; padding-left: 1.2rem;">
+        
+          <!-- 프로젝트 개요 -->
+          <ul style="list-style-type: disc; padding-left: 1.5rem; margin-top:6px;">
+            <li>
+              성동구 빅데이터 분석·활용 펠로우십에 참여하여  
+              상권별 매출 및 유동 인구를 분석하고, 지속 가능한 상권 정의 및 정책을 제안한 프로젝트.
+            </li>
+          </ul>
+        
+          <!-- 기술 스택 -->
+          <ul style="list-style-type: disc; padding-left: 1.5rem; margin-top:4px;">
+            <li>
+              <strong>Tech Stack:</strong> Python · QGIS · SHAP · MySQL
+            </li>
+          </ul>
+        
+          <!-- 주요 성과 -->
+          <ul style="list-style-type: circle; padding-left: 1.5rem;">
             <li>MySQL을 이용해 <strong>매출 및 유동인구 데이터 수집·정제</strong></li>
             <li>격자단위 상권 유형 정의 및 <strong>회귀 분석 기반 매출 예측 모델 개발</strong></li>
             <li>SHAP 분석을 통해 <strong>매출 영향 요인 도출 및 정책 제언</strong></li>
             <li><strong>2024 성동구 빅데이터 펠로우십 우수상 수상</strong></li>
           </ul>
         </li>
-    
-      </ul>
+
     </section>
 
     <section>
@@ -195,29 +213,33 @@
           <strong>SBI Cosmoney</strong>, 데이터 및 서비스 운영 (2021.03 ~ 2024.02)
     
           <!-- [중항목] 업무 개요 -->
-          <p style="margin-left:1.2rem; margin-top:6px;">
-            해외송금 핀테크 기업 <strong>SBI핀테크솔루션즈코리아 그룹</strong> 소속으로,  
-            백엔드 및 데이터 엔지니어링 중심의 사내 서비스 운영 및 자동화 시스템 개발을 수행.
-          </p>
+          <ul style="list-style-type: disc; padding-left: 1.5rem; margin-top:6px;">
+            <li>
+              해외송금 핀테크 기업 <strong>SBI핀테크솔루션즈코리아 그룹</strong> 소속으로,  
+              백엔드 및 데이터 엔지니어링 중심의 사내 서비스 운영 및 자동화 시스템 개발을 수행.
+            </li>
+          </ul>
     
           <!-- [중항목] 기술 스택 -->
-          <p style="margin-left:1.2rem; margin-top:4px;">
-            <strong>Tech Stack:</strong> Java (Spring Boot) · MySQL · Jenkins · BitBucket · Jira · RESTful API · Linux (CronTab) · JSON
-          </p>
+          <ul style="list-style-type: disc; padding-left: 1.5rem; margin-top:4px;">
+            <li>
+              <strong>Tech Stack:</strong> Java (Spring Boot) · MySQL · Jenkins · BitBucket · Jira · RESTful API · Linux (CronTab) · JSON
+            </li>
+          </ul>
     
           <!-- [소항목] 세부 업무 및 성과 -->
-          <ul style="list-style-type: circle; padding-left: 1.2rem;">
+          <ul style="list-style-type: circle; padding-left: 1.5rem;">
             <li><strong>백엔드 개발:</strong> Spring Boot 기반 백오피스(통계·정산·거래내역 관리) 시스템 개발 및 유지보수</li>
             <li><strong>데이터 자동화:</strong> Stored Procedure와 CronTab을 이용한 <strong>대용량 통계 자동화 파이프라인 구축</strong></li>
             <li><strong>API 설계 및 최적화:</strong> RESTful API를 설계하여 실시간 거래 데이터 입출력 효율 개선</li>
-            <li><strong>DevOps 관리:</strong> Jenkins, BitBucket, Jira 기반의 <strong>자동화된 테스트·릴리즈 파이프라인</strong> 구축</li>
-            <li><strong>장애 대응:</strong> 실시간 송금 시스템의 장애 모니터링 및 로그 기반 이슈 분석으로 평균 대응 시간 <strong>30% 단축</strong></li>
-            <li><strong>조직 커뮤니케이션:</strong> 운영팀-개발팀 간 기술 커뮤니케이터 역할 수행, <strong>프로세스 오류 재발률 40% 감소</strong></li>
+            <li><strong>DevOps 관리:</strong> Jenkins, BitBucket <strong>자동화된 테스트·릴리즈 파이프라인</strong> 구축</li>
+            <li><strong>장애 대응:</strong> 실시간 송금 시스템의 장애 모니터링</li>
           </ul>
         </li>
     
       </ul>
     </section>
+
   </footer>
 </body>
 </html>
