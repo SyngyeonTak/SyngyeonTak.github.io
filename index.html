@@ -57,6 +57,26 @@
       text-decoration: underline;
     }
 
+    .award-badge {
+      display: inline-block;
+      background: linear-gradient(90deg, #007BFF, #00AEEF);
+      color: white;
+      font-weight: bold;
+      padding: 4px 10px;
+      border-radius: 12px;
+      margin-left: 6px;
+      font-size: 0.9rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+      vertical-align: middle;
+    }
+    .award-badge::before {
+      content: "🏆 ";
+    }
+    .award-badge strong {
+      color: #e8f7ff; /* 약간 밝은 푸른색 포인트 */
+      font-weight: 700;
+    }
+
     /* ✅ 리스트 스타일 통일 */
     ul.disc-list {
       list-style-type: disc;
@@ -186,7 +206,7 @@
         <li class="project">
           <strong>성동구 상권 분석 프로젝트</strong>
           <a href="https://github.com/DDohyeon2941/sungsoo" target="_blank">[GitHub]</a> 
-          <span class="award-badge">🏆 2024 성동구 빅데이터 펠로우십 우수상</span>
+          <span class="award-badge">2024 성동구 빅데이터 펠로우십 <strong>우수상</strong></span>
           <ul class="disc-list">
             <li>
               성동구 빅데이터 분석·활용 펠로우십에 참여하여  
